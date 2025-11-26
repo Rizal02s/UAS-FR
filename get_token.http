@@ -1,0 +1,15 @@
+# get_token.http
+
+POST http://127.0.0.1:8000/api-token-auth/
+Content-Type: application/json
+
+{
+    "username": "messi",
+    "password": "leo123"
+}
+
+# Uji Akses ke Data Pemain
+
+GET http://127.0.0.1:8000/api/players/
+Authorization: Token 43917ea8075d37d48a9edbbeaa38b53b4c5978ed
+Content-Type: application/json
