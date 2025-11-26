@@ -14,11 +14,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# team_manager/urls.py
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.authtoken import views
-# Wajib import View dari drf_spectacular (Ref. P12)
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView 
 
 urlpatterns = [
